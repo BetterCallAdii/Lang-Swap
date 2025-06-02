@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Translator</title>
+    <title>Lang-Swap</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Translator App</h1>
+    <h1>Lang-Swap</h1>
     <form method="post" enctype="multipart/form-data">
         <label>Enter text to translate:</label><br>
         <textarea name="text" rows="6" cols="60">{{ original_text|default('') }}</textarea><br><br>
