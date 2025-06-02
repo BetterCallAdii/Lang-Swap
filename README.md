@@ -1,2 +1,2 @@
 # translator-app
-seamless translation with tex upload
+seamless translation with text upload
