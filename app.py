@@ -22,7 +22,7 @@ def index():
         src_lang = LANGUAGES.get(request.form.get('source', 'english').lower(), 'en')
         tgt_lang = LANGUAGES.get(request.form.get('target', 'english').lower(), 'en')
 
-        # Check if a file was uploaded
+        
         file = request.files.get('file')
         if file:
             filename = file.filename.lower()
@@ -37,7 +37,7 @@ def index():
             else:
                 original_text = ""
         else:
-            # Get text from form input
+            
             original_text = request.form.get('text', '')
 
         if original_text.strip():
