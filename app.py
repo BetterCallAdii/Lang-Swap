@@ -28,12 +28,6 @@ def index():
             filename = file.filename.lower()
             if filename.endswith('.txt'):
                 original_text = file.read().decode('utf-8')
-            elif filename.endswith('.pdf'):
-                # Extract text from PDF
-                reader = PdfReader(file)
-                original_text = ""
-                for page in reader.pages:
-                    original_text += page.extract_text() or ""
             else:
                 original_text = ""
         else:
